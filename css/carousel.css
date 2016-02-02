@@ -1,0 +1,234 @@
+﻿/*
+Item Name: jQuery Carousel Evolution
+Author: Mapalla
+Author URI: http://codecanyon.net/user/Mapalla
+Version: 1.0
+*/
+
+/* _______________________________________________ */
+
+/* CONTAINER */
+/* _______________________________________________ */
+
+.jq-carousel
+{
+	position :relative ;
+	margin :0 auto;
+	width : 100%;
+	height :auto;
+	border :none;
+	overflow : visible ;
+}
+
+/* _______________________________________________ */
+
+/* SLIDES */
+/* _______________________________________________ */
+
+/* slide container */
+.jq-carousel .slides
+{
+	margin :0;
+	padding :0;
+	border :none;
+	list-style :none;
+	position :relative ;
+	overflow :visible ;
+}
+
+/* slide item */
+.jq-carousel .slides .slideItem 
+{
+	position :absolute ;
+	cursor :pointer ;
+	overflow : hidden;
+	padding :0;
+	margin :0;
+	border :none;
+}
+
+.jq-carousel .slides .slideItem a
+{
+	display: block ;
+	text-decoration :none;
+	margin :0;
+	padding :0;
+	border :none;
+	outline :none;
+}
+
+.jq-carousel .slides .slideItem img
+{
+	margin :0;
+	padding :0;
+	border :none;
+	width :100%;
+	height :100%;
+}
+
+/* _______________________________________________ */
+
+/* DIRECTION BUTTON */
+/* _______________________________________________ */
+
+.jq-carousel .nextButton
+{
+	position :absolute ;
+	right :-10px;
+	top :133px;
+	width :35px !important;
+	height :35px !important;
+	background : url("../images/next_button.png") no-repeat center;
+	cursor :pointer ;
+	z-index :9999;
+}
+.jq-carousel .nextButton:hover
+{
+	background : url("../images/next_button_hover.png") no-repeat center;
+}
+.jq-carousel .prevButton
+{
+	position :absolute ;
+	left :-10px;
+	top :133px;
+	width :35px !important;
+	height: 35px !important;		
+	background : url("../images/prev_button.png")no-repeat center;
+	cursor :pointer ;
+	z-index :9999;
+}
+.jq-carousel .prevButton:hover{
+	background : url("../images/prev_button_hover.png")no-repeat center;
+}
+/* _______________________________________________ */
+
+/* NAVIGATION BUTTON */
+/* _______________________________________________ */
+
+/* buttons container */
+.jq-carousel .buttonNav
+{
+	position : relative ;
+	margin :0 auto;
+	z-index :999;
+}
+
+/* numbers */
+.jq-carousel .buttonNav .numbers 
+{
+	position :relative ;
+	float :left ;
+	margin :5px;
+	color : #828282 ;
+	cursor :pointer ;
+	font-weight :bold ;
+	text-decoration :none;
+	font-size :1em;
+	font-family :Arial, Verdana ;
+}
+
+.jq-carousel .buttonNav .numbers:hover
+{
+	color: #000;
+	text-decoration :underline;
+}
+
+.jq-carousel .buttonNav .numberActive
+{
+	background : none;
+	color :#000;
+	cursor :default ;
+}
+
+/* bullets */
+.jq-carousel .buttonNav .bullet
+{
+	position :relative ;
+	float :left ;
+	width :16px;
+	height :16px;
+	background : url(../images/Bullet-White.png) no-repeat center ;
+	margin :5px;
+	float :left ;
+	cursor :pointer ;
+}
+
+.jq-carousel .buttonNav .bullet:hover
+{
+	background : url(../images/Bullet-Black.png) no-repeat center ;
+}
+
+.jq-carousel .buttonNav .bulletActive
+{
+	background : url(../images/Bullet-Black.png) no-repeat center ;
+	cursor :default ;
+}
+
+/* ____________________________________________________________ */
+
+/* VIDEO */
+/* ____________________________________________________________ */
+
+.jq-carousel .slides .videoOverlay
+{
+	background :url("../images/video.png") no-repeat center; /* play button */
+}
+
+.jq-carousel .slides .spinner
+{
+	background : #000 url("../images/loading.gif") no-repeat center; /* video preloader */
+}
+
+/* _____________________________ *
+
+/* SHADOW */
+/* _____________________________ */
+
+.jq-carousel .shadow
+{
+	width :100%;
+	height :82px;
+}
+
+.jq-carousel .shadow .shadowLeft
+{
+	background : url("../images/shadowLeft.png") no-repeat;
+	width :100px;
+	height :82px;
+	
+	/* fix png problems in ie */
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/shadowLeft.png, sizingmethod=scale)"; /* IE8 */   
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/shadowLeft.png, sizingmethod=scale);   /* IE6 & 7 */                     
+}
+
+.jq-carousel .shadow .shadowMiddle
+{
+	height :82px;
+	background:url("../images/shadowTile.png") repeat-x;
+	
+	/* fix png problems in ie */
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/shadowTile.png, sizingmethod=scale)"; /* IE8 */   
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/shadowTile.png, sizingmethod=scale);   /* IE6 & 7 */                     
+}
+
+.jq-carousel .shadow .shadowRight
+{
+	width :100px;
+	height :82px;
+	background:url("../images/shadowRight.png") no-repeat;
+	
+	/* fix png problems in ie */
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/shadowRight.png, sizingmethod=scale)"; /* IE8 */   
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/shadowRight.png, sizingmethod=scale);   /* IE6 & 7 */                     
+}
+
+/* ____________________________________________________________ */
+
+/* REFLECTION GRADIENT */
+/* ____________________________________________________________ */
+
+/* gradient color for Opera */
+.jq-carousel .gradient
+{
+	background-image :url(../scripts/gradient.svg);
+}
